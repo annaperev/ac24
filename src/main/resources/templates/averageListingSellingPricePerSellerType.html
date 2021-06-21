@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<body th:object="${list}">
+<table>
+    <thead>
+    <tr>
+        <th> SellerType</th>
+        <th> AveragePrice</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="item : ${list}">
+        <td><span th:text="${item.getName()}"> sellerType </span></td>
+        <td> € <span th:text="${item.getNumber()}"> averagePrice </span>,-</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
