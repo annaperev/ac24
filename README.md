@@ -5,12 +5,14 @@ Need only Docker. From root directory run:
 docker build -t autoscout24/reportsapp .
 docker run -p 9001:9001 autoscout24/reportsapp
 ```
+tests run during 'docker run ...' command
 
 Or
 
 Need JVM, IntelliJ Idea, maven. From Idea run: 
 ```
-de/autoscout24/listingreport/ListingReportApplication.java
+run app from here: de/autoscout24/listingreport/ListingReportApplication.java
+run test from here: src/test/java 
 ```
 
 About 
